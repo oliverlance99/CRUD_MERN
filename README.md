@@ -1,4 +1,4 @@
-ACTIVITY 1 - CRUD_MERN
+# ACTIVITY 1 - CRUD_MERN
 
 # Getting Started with Create React App
 
