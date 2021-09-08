@@ -4,16 +4,16 @@ import { useRouteMatch, useHistory } from "react-router-dom";
 import { getTodo, updateTodo } from "./api";
 
 export const EditTodo = () => {
-	const match = useRouteMatch()
+	const match = useRouteMatch();
 	const [todo, setTodo] = useState();
-	const history = useHistory();
+	const history = useHistory()
 
 	useEffect(() => {
 		const fetchTodo = async () => {
-			const todo = await getTodo(match.params.id)
-			setTodo(todo)
+			const todo = await getTodo(match.params.id);
+			setTodo(todo);
 		}
-		fetchTodo()
+		fetchTodo();
 	}, []);
 
 	const onSubmit = async (data) => {
